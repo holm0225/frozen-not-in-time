@@ -1,14 +1,18 @@
 html {
-  font-family: 'Fredoka One', cursive;
-
+  font-family: 'Fredoka One', sans-serif;
 }
 
 section {
   display: flex;
 }
 
+img {
+  width: 10em;
+}
+
 .text {
   position: relative;
+  color: #c09;
 }
 
 .animation {
