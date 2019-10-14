@@ -2,3 +2,15 @@ html {
   font-family: 'Fredoka One', cursive;
 
 }
+
+section {
+  display: flex;
+}
+
+.text {
+  position: relative;
+}
+
+.animation {
+  position: relative;
+}
