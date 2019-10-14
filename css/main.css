@@ -12,6 +12,11 @@ img {
 
 p {
   max-width: 19em;
+  transform: rotate(-7deg);
+}
+
+h1 {
+  transform: rotate(-10deg);
 }
 
 .text {
