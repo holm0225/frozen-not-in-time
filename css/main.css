@@ -7,7 +7,11 @@ section {
 }
 
 img {
-  width: 10em;
+  width: 9em;
+}
+
+p {
+  max-width: 19em;
 }
 
 .text {
@@ -17,4 +21,42 @@ img {
 
 .animation {
   position: relative;
+}
+
+.btn {
+  color: #c09;
+  border-color: #990073;
+}
+
+.ice-cream-cherry {
+  position: absolute;
+  transform: translate(0em,-2em);
+  z-index: 1;
+
+}
+
+.ice-cream-vanilla-fudge {
+  position: absolute;
+  transform: translate(0em,1.5em);
+
+}
+
+.ice-cream-chocolate-chip {
+  position: absolute;
+  transform: translate(.5em,5.5em);
+  z-index: -9;
+
+}
+
+.ice-cream-mint-chip {
+  position: absolute;
+  transform: translate(0em,9.75em);
+  z-index: -10;
+
+}
+
+.ice-cream-cone {
+  position: absolute;
+  transform: translate(0em,15em);
+
 }
