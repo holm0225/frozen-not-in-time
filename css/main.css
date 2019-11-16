@@ -18,7 +18,7 @@ img {
   filter: opacity(0);
   height: 120%;
   width: 66.6%;
-  animation: text-appear .75s 1.5s ease forwards;
+  animation: text-appear .75s 1s ease forwards;
   text-shadow: 2px 2px rgba(0, 0, 0, .5);
   color: #c09;
 }
