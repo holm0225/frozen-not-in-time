@@ -28,7 +28,7 @@ img {
   transform-origin: left center;
   color: #990073;
   position: relative;
-  left: 1.25em;
+  left: .5em;
   top: .75em;
 }
 
@@ -37,13 +37,13 @@ img {
   transform: rotate(-5deg);
   max-width: 19em;
   transform-origin: left center;
-  left: 3em;
+  left: 1.5em;
   top: 1.5em;
 }
 
 .btn {
   position: relative;
-  left: 4em;
+  left: 2em;
   top: 2.5em;
 }
 
@@ -70,7 +70,7 @@ img {
 
 .cherry {
   top: -25em;
-  left: -4em;
+  left: -2em;
   animation: fly-cherry .25s 1.75s linear forwards;
   position: absolute;
   z-index: 10;
@@ -78,7 +78,7 @@ img {
 
 .vanilla-fudge {
   top: -20em;
-  left: -4em;
+  left: -2em;
   animation: fly-fudge .25s 1.25s linear forwards;
   position: absolute;
   z-index: 7;
@@ -86,7 +86,7 @@ img {
 
 .chocolate-chip {
   top: -30em;
-  left: -3.75em;
+  left: -1.75em;
   animation: fly-chip .25s 1s linear forwards;
   position: absolute;
   z-index: 4;
@@ -94,7 +94,7 @@ img {
 
 .mint-chip {
   top: -40em;
-  left: -4em;
+  left: -2em;
   animation: fly-mint .25s .75s linear forwards;
   position: absolute;
   z-index: 1;
@@ -103,7 +103,7 @@ img {
 
 .cone {
   top: -50em;
-  left: -4em;
+  left: -2em;
   animation: fly-cone .2s .3s linear forwards;
   position: absolute;
   z-index: 9;
