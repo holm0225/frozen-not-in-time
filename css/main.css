@@ -4,7 +4,7 @@ html {
   border-bottom: 5px solid #b3fbff;
 }
 
-section {
+.bg {
   display: flex;
   height: 485px;
   background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 10px, #d4fdff 5px, #d4fdff 20px);
@@ -28,8 +28,7 @@ img {
   transform-origin: left center;
   color: #990073;
   position: relative;
-  left: .5em;
-  top: .75em;
+  left: .15em;
 }
 
 .sweet {
@@ -37,8 +36,6 @@ img {
   transform: rotate(-5deg);
   max-width: 19em;
   transform-origin: left center;
-  left: 1.5em;
-  top: 1.5em;
 }
 
 .btn {
@@ -48,20 +45,21 @@ img {
 }
 
 .ice-cream {
-  position: relative;
   min-height: 500px;
-  bottom: calc(0% - 8px);
-  left: calc(13% - 7px);
 }
 
 .drop {
-  position: absolute;
-  height: 40%;
+  width: 180px;
+  height: 180px;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
 }
 
 .btn-ghost {
   color: #c09;
   border-color: #990073;
+  position: relative;
 }
 
 .btn-ghost:hover {
@@ -69,43 +67,30 @@ img {
 }
 
 .cherry {
-  top: -20em;
-  left: -2em;
-  animation: fly-cherry .25s 1s linear forwards;
-  position: absolute;
+  left: 51%
+  animation: fly-cherry .25s .8s ease-in forwards;
   z-index: 10;
 }
 
 .vanilla-fudge {
-  top: -15em;
-  left: -2em;
-  animation: fly-fudge .25s .7s linear forwards;
-  position: absolute;
+  left: 50%
+  animation: fly-fudge .25s .6s ease-in forwards;
   z-index: 7;
 }
 
 .chocolate-chip {
-  top: -25em;
-  left: -1.75em;
-  animation: fly-chip .25s .5s linear forwards;
-  position: absolute;
+  left: 55%;
+  animation: fly-chip .25s .4s ease-in forwards;
   z-index: 4;
 }
 
 .mint-chip {
-  top: -35em;
-  left: -2em;
-  animation: fly-mint .25s .4s linear forwards;
-  position: absolute;
+  animation: fly-mint .25s .2s ease-in forwards;
   z-index: 1;
-  bottom: calc(40% - 8px);
 }
 
 .cone {
-  top: -45em;
-  left: -2em;
-  animation: fly-cone .2s .3s linear forwards;
-  position: absolute;
+  animation: fly-cone .25s ease-in forwards;
   z-index: 9;
 }
 
@@ -133,60 +118,60 @@ img {
 
 @keyframes fly-cherry {
 
-  from {
-    top: -25em;
+  0% {
+    bottom: 100%;
   }
 
-  to {
-    top: -5.5em;
+  100% {
+    bottom: 350px;
   }
 
 }
 
 @keyframes fly-fudge {
 
-  from {
-    top: -30em;
+  0% {
+    bottom: 100%;
   }
 
-  to {
-    top: -1.8em;
+  100% {
+    bottom: 265px;
   }
 
 }
 
 @keyframes fly-chip {
 
-  from {
-    top: -26em;
+  0% {
+    bottom: 100%;
   }
 
-  to {
-    top: 2em;
+  100% {
+    bottom: 190px;
   }
 
 }
 
 @keyframes fly-mint {
 
-  from {
-    top: -25em;
+  0% {
+    bottom: 100%;
   }
 
-  to {
-    top: 5.5em;
+  100% {
+    bottom: 105px;
   }
 
 }
 
 @keyframes fly-cone {
 
-  from {
-    top: -15em;
+  0% {
+    bottom: 100%;
   }
 
-  to {
-    top: 10.5em;
+  100% {
+    bottom: 0;
   }
 
 }
@@ -198,11 +183,11 @@ img {
   }
 
   100% {
-    filter: blur(8px);
+    filter: blur(0);
   }
 
   100% {
-    filter: opacity(100) blur(0);
+    filter: opacity(100);
   }
 
 }
