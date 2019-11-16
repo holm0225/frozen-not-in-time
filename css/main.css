@@ -1,13 +1,11 @@
 html {
   font-family: "Fredoka One", sans-serif;
-  border-top: 5px solid #b3fbff;
-  border-bottom: 5px solid #b3fbff;
 }
 
 .bg {
-  display: flex;
-  height: 485px;
   background: repeating-linear-gradient(325deg, #c9fcff, #c9fcff 10px, #d4fdff 5px, #d4fdff 20px);
+  border-top: 5px solid #b3fbff;
+  border-bottom: 5px solid #b3fbff;
 }
 
 img {
@@ -16,11 +14,8 @@ img {
 
 .text {
   filter: opacity(0);
-  height: 120%;
-  width: 66.6%;
-  animation: text-appear .75s 1s ease forwards;
+  animation: text-appear .75s 1s ease-in forwards;
   text-shadow: 2px 2px rgba(0, 0, 0, .5);
-  color: #c09;
 }
 
 .title {
@@ -28,7 +23,7 @@ img {
   transform-origin: left center;
   color: #990073;
   position: relative;
-  left: .15em;
+  left: -.15em;
 }
 
 .sweet {
@@ -36,6 +31,7 @@ img {
   transform: rotate(-5deg);
   max-width: 19em;
   transform-origin: left center;
+  color: #c09;
 }
 
 .btn {
@@ -45,7 +41,7 @@ img {
 }
 
 .ice-cream {
-  min-height: 500px;
+  min-height: 480px;
 }
 
 .drop {
@@ -67,19 +63,16 @@ img {
 }
 
 .cherry {
-  left: 51%
   animation: fly-cherry .25s .8s ease-in forwards;
   z-index: 10;
 }
 
 .vanilla-fudge {
-  left: 50%
   animation: fly-fudge .25s .6s ease-in forwards;
   z-index: 7;
 }
 
 .chocolate-chip {
-  left: 55%;
   animation: fly-chip .25s .4s ease-in forwards;
   z-index: 4;
 }
@@ -92,28 +85,6 @@ img {
 .cone {
   animation: fly-cone .25s ease-in forwards;
   z-index: 9;
-}
-
-.container {
-  max-width: 56.5em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (min-width: 90em) {
-
-  html {
-    margin: 0;
-  }
-
-  .container {
-    height: 100%;
-  }
-
-  .text {
-    min-height: 500px;
-  }
-
 }
 
 @keyframes fly-cherry {
